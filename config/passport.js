@@ -21,7 +21,6 @@ passport.use(new FacebookStrategy({
         });
         await user.save();
       }
-
       return done(null, user);
     } catch (err) {
       return done(err, false);

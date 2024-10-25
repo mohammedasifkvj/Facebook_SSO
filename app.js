@@ -20,8 +20,6 @@ app.use(cookieParser());
 
 app.use(passport.initialize());
 
-
-
 mongoose.connect(process.env.MONGODB_URI).then(() => {
   console.log('Connected to MongoDB');
 }).catch(err => {
